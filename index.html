@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validatio</title>
+<link rel='stylesheet' href='stylesheet3.css' type='text/css' />
 </head>
-
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+<h1>Registration Form</h1>
+<form id="form" name='registration'>
+<ul>
+<li><label for="stdname">Student Name:</label></li>
+<li><input id="stdname" type="text" name="stdname" /></li>
+<li><label for="address">Address:</label></li>
+<li><input id="address"
+	type="text" name="address" /></li>
+<li><label for="emailid">Email Id:</label></li>
+<li><input id="emailid" type="text" name="emailid" /></li>
+<li><label for="dob">Dob:</label></li>
+<li><input id="dob" type="date" name="dob" placeholder="dd/mm/yy"></li>
+<li><label id="branch">Branch:</label></li>
+<div>
+<li><input  class="radio" type="radio"  name="It" value="It" /><span>Information Technology</span></li>
+<li><input  class="radio" type="radio"  name="Comp" value="Comp" /><span>Computer</span></li>
+<li><input  class="radio" type="radio"  name="Mech" value="Mech" /><span>Mechanical</span></li>
+<li><input  class="radio" type="radio"  name="Civ" value="Civ" /><span>Civil</span></li>
+<li><label>Hobbies:</label></li>
+<li><input class="checkbox" type="checkbox" name="co" value="co"><span>Coding</span></li>
+<li><input class="checkbox" type="checkbox" name="pl" value="pl"><span>Playing</span></li>
+<li><input class="checkbox" type="checkbox" name="wt" value="wt"><span>Writing</span></li>
+<li><input class="checkbox" type="checkbox" name="tk" value="tk"><span>Trekking</span></li>
+<li><input type="submit" name="submit" value="Submit" onclick="formValidation()"></li>
+</ul>
+</form>
+<script src="script3.js"></script>
 </body>
 </html>
